@@ -1,8 +1,8 @@
 // selecting the image elements  
 
 function configureListeners() {
-    const newLocal = document.getElementsByTagName('img');
-    let images = newLocal 
+    const images = document.getElementsByTagName('img');
+  
 
 
     // Iterate over images and add mouseover event listeners 
@@ -28,35 +28,24 @@ function removeOpacity(event) {
     if (this.classList.contains('dim')){
         this.classList.remove('dim')
     }
-     
-    let element = document.getElementById('ppg');
+
     let element = document.getElementById('color-price');
         element.textContent = '';
-     
-    let color = document.getElementById('color')
+
     let color = document.getElementById('color-name');
         color.textContent = ''; 
 
     event.preventDefault();    
 }
 
-function changeImage (elementId){
-    let image = document.getElementById('imgDispaly');
-    image.src = elementId.src;
-}
 
-function getProductionInfo(partNumber){
-function getProductionInfo(paintColor){
-            let price;
-            let colorName;
-        }
 
 
 
 function getProductInfo(paintColor) {
     let price;
     let colorName;  
-}
+
 
     
     switch (partNumber) {}
@@ -133,6 +122,7 @@ function getProductInfo(paintColor) {
             break;   
           default:              
     }
+}
 
     function updatePrice(colorName, price) {
      let ppg = document.getElementById('ppg');
